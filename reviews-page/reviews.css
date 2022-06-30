@@ -1,0 +1,63 @@
+:root {
+    --primary: #86C232;
+    --primary-dark: #61892F;
+    --secondary: #6E32C2;
+    --secondary-dark: #8954D3;
+    --bg: #222629;
+    --dark: #474B4F;
+    --grey: #6B6E70;
+  }
+
+.main-container {
+    display: block;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
+    justify-self: center;
+    margin: 0 auto;
+    height: 100%;
+    background-color: var(--bg);
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 30px 50px;
+    color: white;
+}
+
+.screenshot {
+    width: 100%;
+    padding-bottom: 12px;
+}
+
+.services-card {
+    margin: 1rem;
+    height: 525px;
+    min-width: 300px;
+    width: 400px;
+    margin: 10px 30px;
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0) 0%, rgba(17, 17, 17, 0.6) 100%), url(/images/ps5_6_games.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #fff;
+}
+
+.services-card:nth-child(2) {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0) 0%, rgba(17, 17, 17, 0.6) 100%), url(/images/ps5tear17-1440x810.jpg);
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+
+/* Mobile Response */
+@media screen and (max-width: 768px) {
+    .main-container {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-self: center;
+        width: 100%;
+        margin: 0 auto;
+        height: 100%;
+    }
+}

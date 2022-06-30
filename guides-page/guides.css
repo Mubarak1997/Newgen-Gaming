@@ -1,0 +1,81 @@
+:root {
+    --primary: #86C232;
+    --primary-dark: #61892F;
+    --secondary: #6E32C2;
+    --secondary-dark: #8954D3;
+    --bg: #222629;
+    --dark: #474B4F;
+    --grey: #6B6E70;
+  }
+
+.main-container {
+    display: block;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
+    justify-self: center;
+    margin: 0 auto;
+    height: 100%;
+    background-color: var(--bg);
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 80px 50px;
+}
+
+.iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    margin: 30px 0;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.byline {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white
+}
+
+.byline-content {
+    padding-right: 10px;
+}
+
+.byline-text {
+    padding-left: 3px;
+}
+
+.description {
+    width: 100%;
+    margin: 50px 0;
+    color: white;
+}
+
+.services-card:nth-child(2) {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0) 0%, rgba(17, 17, 17, 0.6) 100%), url(/images/ps5_6_games.jpg);
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+
+/* Mobile Response */
+@media screen and (max-width: 768px) {
+    .main-container {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-self: center;
+        width: 100%;
+        margin: 0 auto;
+        height: 100%;
+    }
+}

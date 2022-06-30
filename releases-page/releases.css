@@ -1,0 +1,145 @@
+:root {
+  --primary: #86C232;
+  --primary-dark: #61892F;
+  --secondary: #6E32C2;
+  --secondary-dark: #8954D3;
+  --bg: #222629;
+  --dark: #474B4F;
+  --grey: #6B6E70;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin-block: 2rem;
+  gap: 2rem;
+  color: var(--bg);
+  height: 100%;
+}
+
+.title {
+  padding-top: 12px;
+}
+
+.platforms {
+  min-height: 34;
+}
+
+.card-image {
+  max-width: 100%;
+  min-height: 12.4rem;
+  display: block;
+  object-fit: cover;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: clamp(20rem, calc(20rem + 2vw), 22rem);
+  overflow: hidden;
+  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 1em;
+  background: whitesmoke;
+  background: linear-gradient(to right, whitesmoke, #ece9e6);
+}
+
+.card-body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.tag {
+  align-self: flex-start;
+  padding: 0.25em 0.75em;
+  border-radius: 1em;
+  font-size: 0.75rem;
+}
+
+.tag+.tag {
+  margin-left: 0.5em;
+}
+
+.tag-blue {
+  background: #56ccf2;
+  background: linear-gradient(to bottom, #2f80ed, #56ccf2);
+  color: #fafafa;
+}
+
+.tag-red {
+  background: #cb2d3e;
+  background: linear-gradient(to bottom, #ef773a, orange);
+  color: #fafafa;
+}
+
+.card-body h4 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.card-footer {
+  display: flex;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+.game {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.user-image {
+  border-radius: 50%;
+}
+
+.game-info>small {
+  color: #666;
+}
+
+.main-container {
+  display: block;
+  grid-template-columns: 1fr 1fr;
+  align-items: flex-start;
+  justify-self: center;
+  margin: 0 auto;
+  height: 100%;
+  background-color: var(--bg);
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  padding: 30px 50px;
+  color: white;
+}
+
+/* Mobile Response */
+@media screen and (max-width: 768px) {
+  .main-container {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-self: center;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+  }
+}
+
+.services-link {
+  color: white;
+}
+
+.services-link:link {
+  color: white;
+}
+
+.services-link:visited {
+  color: purple;
+}
+
+
+.services-link:hover {
+  color: black;
+}
